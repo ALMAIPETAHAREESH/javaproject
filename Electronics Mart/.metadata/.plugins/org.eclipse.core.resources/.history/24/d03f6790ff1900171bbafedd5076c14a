@@ -1,0 +1,5 @@
+package com.harish.controller;
+
+public class AdminProductController {
+
+}

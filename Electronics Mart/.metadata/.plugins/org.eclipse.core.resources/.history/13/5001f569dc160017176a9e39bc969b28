@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+
+-<beans:beans xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:beans="http://www.springframework.org/schema/beans" xmlns="http://www.springframework.org/schema/security">
+
+<!-- No security for static resources -->
+
+
+<http security="none" pattern="/resources/**"/>
+
+<!-- Security for the rest of my mappings -->
+
+
+
+-<http>
+
+<intercept-url pattern="/admin/**" access="hasAuthority('ROLE_ADMIN')"/>
+
+<intercept-url pattern="/customer/**" access="hasAuthority('CUSTOMER')"/>
+
+<intercept-url pattern="/**" access="permitAll"/>
+
+<form-login authentication-failure-url="/login?error" default-target-url="/" login-page="/login"/>
+
+<logout delete-cookies="JSESSIONID" logout-url="/perform_logout" logout-success-url="/"/>
+
+<csrf disabled="true"/>
+
+</http>
+
+
+-<authentication-manager>
+
+
+-<authentication-provider>
+
+<jdbc-user-service authorities-by-username-query="SELECT email, role FROM user WHERE email = ?" users-by-username-query="SELECT email, password, is_Active FROM user WHERE email = ?" data-source-ref="dataSource"/>
+
+</authentication-provider>
+
+</authentication-manager>
+
+</beans:beans>

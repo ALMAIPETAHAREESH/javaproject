@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;electronicsmart/src/main/webapp/WEB-INF/views/login.jsp&apos; to &apos;loginform.jsp&apos;" description="Rename resource &apos;login.jsp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/webapp/WEB-INF/views/login.jsp" name="loginform.jsp" stamp="1491053522044" updateReferences="true"/>
+</session>

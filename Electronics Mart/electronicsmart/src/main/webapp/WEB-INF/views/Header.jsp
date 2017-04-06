@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Electronic Mart</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  <script> </script>
+ 
+ 
+ <style>
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+      height:70%;
+      background-color:#fff;
+	  font-family: 'Sansita', sans-serif;
+
+  
+  }
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+   
+    padding: 20px;
+}
+
+
+
+body { 
+  background: url('http://www.publicdomainpictures.net/pictures/50000/velka/flower-meadow.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.container{
+padding: 25px;   
+}    
+
+
+
+ html, body{
+    width:100%;
+    height:100%;
+    
+	font-family: 'Sansita', sans-serif;
+    }
+.carousel-inner,.carousel,.item,.container,.fill {
+  height:100%;
+  width:100%;
+  background-position:center center;
+  background-size:cover;
+  background-color:#59DEFF;
+}
+.slide-wrapper{display:inline;}
+.slide-wrapper .container{padding:0px;}
+
+/*------------------------------ vertical bootstrap slider----------------------------*/
+
+.carousel-inner> .item.next ,  .carousel-inner > .item.active.right{ transform: translate3d(0, 100%, 0); -webkit-transform: translate3d(0, 100%, 0); -ms-transform: translate3d(0, 100%, 0); -moz-transform: translate3d(0, 100%, 0); -o-transform: translate3d(0, 100%, 0);  top: 0;}
+.carousel-inner > .item.prev ,.carousel-inner > .item.active.left{ transform: translate3d(0,-100%, 0); -webkit-transform: translate3d(0,-100%, 0);  -moz-transform: translate3d(0,-100%, 0);-ms-transform: translate3d(0,-100%, 0); -o-transform: translate3d(0,-100%, 0); top: 0;}
+.carousel-inner > .item.next.left , .carousel-inner > .item.prev.right , .carousel-inner > .item.active{transform:translate3d(0,0,0); -webkit-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);; -moz-transform:translate3d(0,0,0); -o-transform:translate3d(0,0,0); top:0;}
+
+/*------------------------------- vertical carousel indicators ------------------------------*/
+.carousel-indicators{
+position:absolute;
+top:0;
+bottom:0;
+margin:auto;
+height:20px;
+right:10px; left:auto;
+width:auto;
+}
+.carousel-indicators li{display:block; margin-bottom:5px; border:1px solid #00a199; }
+.carousel-indicators li.active{margin-bottom:5px; background:#00a199;}
+/*-------- Animation slider ------*/
+
+.animated{
+	animation-duration:3s;
+	-webkit-animation-duration:3s;
+	-moz-animation-duration:3s;
+	-ms-animation-duration:3s;
+	-o-animation-duration:3s;
+	visibility:visible;
+	opacity:1;
+	transition:all 0.3s ease;
+}
+.carousel-img{   
+	 display: inline-block;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+	}
+
+
+
+
+.box :hover{
+    border:1px #036 solid;
+	padding:5px 5px 5px;
+	box-shadow:1px 1px 5px;
+    background:skyblue;
+}
+
+
+.social:hover {
+     -webkit-transform: scale(1.2);
+     -moz-transform: scale(1.2);
+     -o-transform: scale(1.2);
+ }
+ .social {
+     -webkit-transform: scale(0.8);
+     /* Browser Variations: */
+     
+     -moz-transform: scale(0.8);
+     -o-transform: scale(0.8);
+     -webkit-transition-duration: 0.5s;
+     -moz-transition-duration: 0.5s;
+     -o-transition-duration: 0.5s;
+ }
+
+/*
+    Multicoloured Hover Variations
+*/
+ 
+ #social-fb:hover {
+     color:red;
+ }
+ #social-tw:hover {
+     color: #4099FF;
+ }
+ #social-gp:hover {
+     color: #d34836;
+ }
+ #social-em:hover {
+     color: #f39c12;
+ }
+
+</style>
+ 
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#"><b>Electronics Mart</b></a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="">Home</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Products <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#"> Mobiles</a></li>
+          <li><a href="#">Laptops</a></li>
+          <li><a href="#">Home Appliances</a></li>
+        </ul>
+      </li>
+      <li><a href="abt">About us</a></li>
+      <li><a href="cont">Contact us</a></li>
+      
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="reg"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>
+
